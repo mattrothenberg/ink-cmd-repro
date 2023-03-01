@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "commander": "^10.0.0",
+    "ink": "^3.2.0",
+    "ink-text-input": "^4.0.3",
+    "react": "^18.2.0",
+    "react-error-boundary": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "esbuild": "^0.17.10"
+  },
+  "scripts": {
+    "dev": "esbuild --watch --sourcemap=inline --bundle --platform=node --outfile=dist/index.js src/index.ts",
+    "build": "esbuild --minify --bundle --platform=node --outfile=dist/index.js src/index.ts"
+  }
+}
